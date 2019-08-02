@@ -7,6 +7,7 @@ The code belongs to the paper on "Inverse Transformed Encoding Models" (ITEM) by
 - Preprint: https://www.biorxiv.org/content/10.1101/610626v1
 - Data: https://openneuro.org/datasets/ds002013
 - Code: https://github.com/JoramSoch/ITEM-paper
+- Toolbox: https://github.com/JoramSoch/ITEM
 
 
 <h3>Requirements</h3>
@@ -31,6 +32,8 @@ This sub-folder contains the following code:
 Note that, other than in the paper, the simulation
 - implements a fourth method, "least squares, whitened" (LS-W), which is based on whitening the trial-wise parameters estimates with `W = U^(-1/2)` (and then applying the two-sample t-test and logistic regression, respectively) instead of performing the whole inverse transformed encoding model approach (which implicitly also requires whitening the design matrix `T`). In the figures, LS-W results are given in cyan color. Because whitening only the trial-wise response amplitudes is not sufficient, LS-W is inferior to LS-T a.k.a. ITEM and these results were not included in the paper.
 - produces more figures, some of which are just there to check that the simulation was done correct (Figures 1-2) or to explore several statistics of raw, separate and whitened trial-wise parameter estimates (Figures 3-6). Figures 7 and 8 are preliminary views of the results reported in the paper and can be reproduced by running `Figure_4.m` and `Figure_5.m`. Note that this requires to first run `Simulation.m` which produces a file `Simulation.mat` containing the simulation results to be plotted.
+
+Findings denoted in the paper as “results not shown”, regarding the specificity of ITEM and other approaches, can be found in the sub-folder “Simulation/null_results/”. They can also be reproduced by setting `μA = μB` in the simulation code (l. 35 in `Simulation.m`).
 
 The simulation uses the routines `ttest2`, `mnrfit`, `normrnd` and `mvnrnd` from MATLAB’s Statistics Toolbox. Use of the normal distribution samplers `normrnd` and `mvnrnd` can be circumvented by using the supplied matrix normal sampler `MD_matnrnd.m` (which uses the MATLAB built-in `randn` and which is already implemented in place of `normrnd` and `mvnrnd`).
 
