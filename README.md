@@ -2,7 +2,7 @@
 
 <b>MATAB Code for the ITEM Paper, as submitted to NeuroImage 2019</b>
 
-The code belongs to the paper on "Inverse Transformed Encoding Models" (ITEM) by Soch et al. (2019), publicly available from <i>bioRxiv</i> and currently under review at <i>NeuroImage</i>. It consists of two sub-folders, "Simulation" (Section 3, Figures 4-5 in the paper) and "Application" (Section 4, Figures 6-8 in the paper).
+This code belongs to the paper on "Inverse Transformed Encoding Models" (ITEM) by Soch et al. (2019), publicly available from <i>bioRxiv</i> and currently under review at <i>NeuroImage</i>. It consists of two sub-folders, "Simulation" (Section 3, Figures 4-5 in the paper) and "Application" (Section 4, Figures 6-8 in the paper).
 
 - Preprint: https://www.biorxiv.org/content/10.1101/610626v1
 - Data: https://openneuro.org/datasets/ds002013
@@ -50,3 +50,10 @@ For re-running analyses of the empirical data, you need to perform the following
 - The sub-folder "VisRec_ITEM/LS-A_LS-S/" contains additional code that allows to combine LS-A and LS-S with support vector regression (SVR; requiring `libsvm`), to be called from the scripts `VisRec_ITEM_LS_A.m` and `VisRec_ITEM_LS_S.m` in the sub-folder "VisRec_ITEM". Because SVR makes the reconstruction performance of LS-A and LS-S even worse, compared with ITEM-style inversion, these results were not included in the paper.
 
 Note that ROI images supplied with the BIDS-compatible data set on OpenNeuro are registered to the pre-processed data when using the pre-processing routines from <i>this</i> repository. If pre-processing routines are modified (e.g. to exclude spatial realignment or to include spatial normalization), the ROI images may <i>not</i> match the pre-processed data anymore in which case they must be resliced to the pre-processed data (i.e. the data to which statistical analysis will be applied).
+
+
+<h3>Bonus: Graphical Abstract</h3>
+
+<img src="https://github.com/JoramSoch/ITEM-paper/raw/master/Figure_GA.png" alt="Graphical Abstract" width=1000>
+
+This graphical abstract illustrates the core idea of the paper: When multiplying the trial-wise design matrix with itself, weighted by the (inverse of the) scan-by-scan covariance matrix, this results in the (inverse of the) trial-by-trial covariance matrix which describes the distribution of the trial-wise parameter estimates. Click <a href="https://github.com/JoramSoch/ITEM-paper/raw/master/Figure_GA.pdf">here</a> for a PDF version.
