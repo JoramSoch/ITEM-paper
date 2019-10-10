@@ -2,7 +2,7 @@
 
 
 clear
-close all
+% close all
 
 %%% Step 1: load results %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

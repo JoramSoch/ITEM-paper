@@ -2,7 +2,7 @@
 
 
 clear
-close all
+% close all
 
 %%% Step 1: load results %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -42,7 +42,7 @@ r_med = median([R(:); 1]);
 
 % locate max, min, med
 [j_max, k_max, i_max] = ind2sub([num_sess, num_sect, num_subj], find(R==r_max));
-[j_min, k_min, i_min] = ind2sub([num_sess, num_sect, num_subj], find(R==r_min));
+[j_min, k_min, i_min] = ind2sub([num_sess, num_sect, num_subj], find(abs(R)==r_min));
 [j_med, k_med, i_med] = ind2sub([num_sess, num_sect, num_subj], find(R==r_med));
 
 % load actual and reconstructed values (max)

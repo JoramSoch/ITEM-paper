@@ -124,7 +124,7 @@ for i = 1:num_subj
     for j = 1:num_ROIs
         % load ROI image
         fprintf('%d, ', j);
-        roi_str = strcat(bids_dir,'/','sub-',subj_ids{i},'/anat/','rsub-',subj_ids{i},'_roi-',ROI_imgs{j},'.nii');
+        roi_str = strcat(bids_dir,'/','sub-',subj_ids{i},'/anat/','sub-',subj_ids{i},'_roi-',ROI_imgs{j},'.nii');
         roi_hdr = spm_vol(roi_str);
         roi_img = spm_read_vols(roi_hdr);
         roi_img = reshape(roi_img,[1 prod(roi_hdr.dim)]);
