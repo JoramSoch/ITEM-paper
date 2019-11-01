@@ -1,7 +1,7 @@
-% ITEM Paper, Figure 5 (old Figure 4)
+% ITEM Paper, Figure 5
 
 clear
-close all
+% close all
 
 % load decoding accuracies
 load Simulation.mat

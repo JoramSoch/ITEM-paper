@@ -1,7 +1,7 @@
-% ITEM Paper, Figure 4 (old Figure 3)
+% ITEM Paper, Figure 4
 
 clear
-close all
+% close all
 
 % load true positive rates
 load Simulation.mat
