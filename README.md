@@ -57,4 +57,4 @@ Note that ROI images supplied with the BIDS-compatible data set on OpenNeuro are
 
 <img src="https://github.com/JoramSoch/ITEM-paper/raw/master/Figure_GA.png" alt="Graphical Abstract" width=1000>
 
-This graphical abstract illustrates the core idea of the paper: When multiplying the trial-wise design matrix with itself, weighted by the (inverse of the) scan-by-scan covariance matrix, this results in the (inverse of the) trial-by-trial covariance matrix which describes the distribution of the trial-wise parameter estimates. Click <a href="https://github.com/JoramSoch/ITEM-paper/raw/master/Figure_GA.pdf">here</a> for a PDF version.
+This graphical abstract illustrates the core idea of the paper: When multiplying the trial-wise design matrix with itself, weighted by the (inverse of the) scan-by-scan covariance matrix, this results in the (inverse of the) trial-by-trial covariance matrix which describes the distribution of the trial-wise parameter estimates. Click <a href="https://github.com/JoramSoch/ITEM-paper/blob/master/Figure_GA.pdf">here</a> for a PDF version.
