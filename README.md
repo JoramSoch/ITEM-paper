@@ -1,10 +1,11 @@
 # ITEM-paper
 
-<b>MATAB Code for the ITEM Paper, as submitted to NeuroImage 2019</b>
+<b>MATAB Code for the ITEM Paper, as published in NeuroImage 2020</b>
 
-This code belongs to the paper on "Inverse Transformed Encoding Models" (ITEM) by Soch et al. (2019), publicly available from <i>bioRxiv</i> and currently under review at <i>NeuroImage</i>. It consists of two sub-folders, "Simulation" (Section 3, Figures 4-5 in the paper) and "Application" (Section 4, Figures 7-8 in the paper).
+This code belongs to the paper on "Inverse Transformed Encoding Models" (ITEM) by Soch et al. (2020), publicly available from <i>bioRxiv</i> and published open-access in <i>NeuroImage</i>. It consists of two sub-folders, "Simulation" (Section 3, Figures 4-5 in the paper) and "Application" (Section 4, Figures 7-8 in the paper).
 
-- Preprint: https://www.biorxiv.org/content/10.1101/610626v2
+- Preprint: https://www.biorxiv.org/content/10.1101/610626v3
+- Paper: https://www.sciencedirect.com/science/article/pii/S1053811919310407
 - Data: https://openneuro.org/datasets/ds002013 (Version 1.0.2)
 - Code: https://github.com/JoramSoch/ITEM-paper
 - Toolbox: https://github.com/JoramSoch/ITEM
